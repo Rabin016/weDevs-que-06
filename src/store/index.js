@@ -12,10 +12,10 @@ export default new Vuex.Store({
         msg: null,
     },
     getters: {
-        getAllTodo: (state) => state.todolist,
-        getCompletedTodo: (state) =>
+        getAllTodo: state => state.todolist,
+        getCompletedTodo: state =>
             state.todolist.filter(({ completed }) => completed),
-        getUncompletedTodo: (state) =>
+        getUncompletedTodo: state =>
             state.todolist.filter(({ completed }) => !completed),
     },
     mutations: {
