@@ -2,7 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
 
-const uri = "api/todos";
+const uri = "https://todo-list-life-rc.herokuapp.com/api/todos";
 
 Vue.use(Vuex);
 
