@@ -2,7 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
 
-const uri = "api/todos";
+const uri = "https://todo-list-life-rc.herokuapp.com/api/todos";
 
 Vue.use(Vuex);
 
@@ -12,10 +12,10 @@ export default new Vuex.Store({
         msg: null,
     },
     getters: {
-        getAllTodo: state => state.todolist,
-        getCompletedTodo: state =>
+        getAllTodo: (state) => state.todolist,
+        getCompletedTodo: (state) =>
             state.todolist.filter(({ completed }) => completed),
-        getUncompletedTodo: state =>
+        getUncompletedTodo: (state) =>
             state.todolist.filter(({ completed }) => !completed),
     },
     mutations: {
