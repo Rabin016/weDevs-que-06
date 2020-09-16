@@ -2,7 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
 
-const uri = "http://localhost:5000/api/todos";
+const uri = "api/todos";
 
 Vue.use(Vuex);
 
